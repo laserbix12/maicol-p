@@ -1,281 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Ds-Technology</title>
-  <style>
-    /* ===== RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Contacto | Ds Technology</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
     body {
       font-family: "Poppins", sans-serif;
+      background-color: #f3f6fa;
       color: #333;
-      background-color: #fff;
-      line-height: 1.6;
+      margin: 0;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* ===== HEADER ===== */
+    /* === HEADER === */
     header {
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #0d47a1;
-      padding: 15px 60px;
+      padding: 15px 40px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     .logo {
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #fff;
+      font-size: 1.7rem;
+      font-weight: 700;
     }
 
     .logo span {
-      color: #64b5f6;
+      color: #ffeb3b;
     }
 
     nav ul {
-      display: flex;
-      gap: 25px;
       list-style: none;
-    }
-
-    nav a {
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #bbdefb;
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      background: linear-gradient(rgba(13, 71, 161, 0.6), rgba(13, 71, 161, 0.6)),
-        url('https://images.unsplash.com/photo-1525186402429-b4ff38bedbec?auto=format&fit=crop&w=1600&q=80') center/cover;
-      height: 60vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* ===== CONTACT SECTION ===== */
-    .contact-section {
-      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
       flex-wrap: wrap;
-      gap: 40px;
-      padding: 80px 60px;
-      background: #f9f9f9;
-      justify-content: center;
     }
 
-    .contact-info {
-      flex: 1 1 350px;
-      max-width: 400px;
-    }
-
-    .contact-info h2 {
-      color: #0d47a1;
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-
-    .contact-info p {
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .contact-info ul {
-      list-style: none;
-      color: #1565c0;
+    nav ul li a {
+      text-decoration: none;
+      color: white;
       font-weight: 500;
+      transition: color 0.3s;
     }
 
-    .contact-info li {
-      margin-bottom: 10px;
+    nav ul li a:hover {
+      color: #ffeb3b;
     }
 
-    .contact-form {
-      flex: 1 1 400px;
-      max-width: 500px;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .contact-form h3 {
-      color: #0d47a1;
-      margin-bottom: 20px;
+    /* === TITULO === */
+    h1 {
       text-align: center;
+      color: #0d47a1;
+      margin-top: 50px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    /* === FORMULARIO === */
+    form {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 40px auto;
+      transition: all 0.3s ease-in-out;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1em;
-      width: 100%;
-      outline: none;
-      transition: border 0.3s ease;
+    form:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #1565c0;
-    }
-
-    .contact-form button {
-      background: #1565c0;
-      color: #fff;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+    label {
       font-weight: 500;
-      transition: background 0.3s ease;
+      margin-bottom: 5px;
+      color: #0d47a1;
     }
 
-    .contact-form button:hover {
-      background: #0d47a1;
+    input,
+    select,
+    textarea {
+      border-radius: 10px !important;
     }
 
-    /* ===== MAPA ===== */
-    .map-section {
+    .btn-primary {
+      background-color: #1565c0;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 40px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0d47a1;
+      transform: scale(1.05);
+    }
+
+    /* === MAPA === */
+    iframe {
+      display: block;
       width: 100%;
       height: 400px;
-      margin-top: 50px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
       border: none;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 40px auto;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     }
 
-    /* ===== FOOTER ===== */
+    /* === FOOTER === */
     footer {
-      background: #0d47a1;
-      color: #fff;
+      background-color: #0d47a1;
+      color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 0.95rem;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 20px;
-      }
-
-      .hero h1 {
-        font-size: 2em;
-      }
-
-      .contact-section {
-        padding: 50px 20px;
-      }
-
-      .contact-info h2 {
-        font-size: 1.6em;
-      }
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
+
 <body>
   <!-- HEADER -->
   <header>
     <div class="logo">Ds-<span>Technology</span></div>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="Nosotros.html">Nosotros</a></li>
-        <li><a href="Servicios.html">Servicios</a></li>
-        <li><a href="Portafolio.html">Portafolio</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-        <li><a href="Contacto.html" style="color:#bbdefb; font-weight:600;">Contacto</a></li>
+        <li><a href="index.html">inicio</a></li>
+        <li><a href="nosotros.html">nosotros</a></li>
+        <li><a href="servicios.html">servicios</a></li>
+        <li><a href="portafolio.html">portafolio</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+        <li><a href="formulario.html">formulario</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Contáctanos</h1>
-      <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte a hacerlo realidad.</p>
-    </div>
-  </section>
+  <!-- TITULO -->
+  <h1>Formulario de Contacto</h1>
 
-  <!-- CONTACT SECTION -->
-  <section class="contact-section">
-    <div class="contact-info">
-      <h2>Información de Contacto</h2>
-      <p>Ponte en contacto con nosotros por cualquiera de los siguientes medios. Nuestro equipo te responderá lo antes posible.</p>
-      <ul>
-        <li>📍 Dirección: Av. Tecnología 456, Lima, Perú</li>
-        <li>📞 Teléfono: +51 987 654 321</li>
-        <li>📧 Correo: contacto@dstechnology.com</li>
-        <li>🕒 Horario: Lunes a Viernes de 9:00 a 18:00</li>
-      </ul>
+  <!-- FORMULARIO -->
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan" required minlength="3">
+      <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
     </div>
 
-    <div class="contact-form">
-      <h3>Envíanos un mensaje</h3>
-      <form action="#" method="post">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
-        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        <button type="submit">Enviar Mensaje</button>
-      </form>
+    <div class="col-md-6">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="apellido" placeholder="Ej: Pérez" required minlength="3">
+      <div class="invalid-feedback">Por favor ingresa tu apellido.</div>
     </div>
-  </section>
+
+    <div class="col-md-6">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+      <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" id="telefono" pattern="[0-9]{7,10}" placeholder="Ej: 3101234567" required>
+      <div class="invalid-feedback">Por favor ingresa un número de teléfono válido (7–10 dígitos).</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="ciudad" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="ciudad" value="Mosquera" required>
+      <div class="invalid-feedback">Por favor ingresa una ciudad válida.</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="departamento" class="form-label">Departamento</label>
+      <select class="form-select" id="departamento" required>
+        <option selected disabled value="">Selecciona...</option>
+        <option>Mosquera - Cundinamarca</option>
+        <option>Bogotá - Cundinamarca</option>
+        <option>Madrid - Cundinamarca</option>
+        <option>Funza - Cundinamarca</option>
+      </select>
+      <div class="invalid-feedback">Selecciona un departamento válido.</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="codigoPostal" class="form-label">Código Postal</label>
+      <input type="text" class="form-control" id="codigoPostal" pattern="[0-9]{4,6}" placeholder="Ej: 250047" required>
+      <div class="invalid-feedback">Ingresa un código postal válido (4–6 dígitos).</div>
+    </div>
+
+    <div class="col-12">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="terminos" required>
+        <label class="form-check-label" for="terminos">
+          Acepto los términos y condiciones
+        </label>
+        <div class="invalid-feedback">Debes aceptar los términos antes de enviar.</div>
+      </div>
+    </div>
+
+    <div class="col-12 text-center">
+      <button class="btn btn-primary mt-3" type="submit">Enviar Formulario</button>
+    </div>
+  </form>
 
   <!-- MAPA -->
-  <div class="map-section">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.795607505123!2d-77.03652982520437!3d-12.136083488077843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b01956d4ff%3A0x401ff1f7f7026b8!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1681223319191!5m2!1ses-419!2spe" 
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </div>
-  
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0032681268417!2d-74.23905432531683!3d4.708278942844321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c80a58bbd29%3A0x1da3533d2c0dfc65!2sMosquera%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1730061019001!5m2!1ses-419!2sco"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Ds-Technology | Todos los derechos reservados.</p>
+    <p>&copy; 2025 Ds-Technology | Mosquera, Cundinamarca</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Validación del formulario -->
+  <script>
+    (() => {
+      "use strict";
+      const forms = document.querySelectorAll(".needs-validation");
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
 </body>
 </html>
