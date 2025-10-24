@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Ds-Technology</title>
+  <style>
+    /* ===== RESETEO ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== ENCABEZADO ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d47a1;
+      padding: 15px 60px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #64b5f6;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.6), rgba(13, 71, 161, 0.6)),
+        url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80') center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===== SECCIÓN BLOG ===== */
+    .blog-section {
+      padding: 80px 60px;
+      background: #f9f9f9;
+    }
+
+    .blog-section h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .blog-content h3 {
+      color: #1565c0;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .blog-content p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .blog-content a {
+      display: inline-block;
+      background: #1565c0;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .blog-content a:hover {
+      background: #0d47a1;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2em;
+      }
+
+      .blog-section {
+        padding: 40px 20px;
+      }
+
+      .blog-section h2 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Ds-<span>Technology</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li><a href="Blog.html" style="color:#bbdefb; font-weight:600;">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Blog de Innovación y Tecnología</h1>
+      <p>Explora las últimas tendencias, consejos y noticias del mundo digital con Ds-Technology.</p>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section class="blog-section">
+    <h2>Artículos Recientes</h2>
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Inteligencia Artificial">
+        <div class="blog-content">
+          <h3>Avances en Inteligencia Artificial</h3>
+          <p>La IA está transformando la forma en que las empresas interactúan con sus clientes y optimizan sus procesos.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Transformación digital">
+        <div class="blog-content">
+          <h3>Transformación Digital Empresarial</h3>
+          <p>Descubre cómo las compañías están adoptando nuevas tecnologías para mantenerse competitivas.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Ciberseguridad">
+        <div class="blog-content">
+          <h3>Ciberseguridad: Protege tus datos</h3>
+          <p>Aprende las mejores prácticas para mantener tu información y la de tus clientes a salvo en la red.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" alt="Desarrollo Web">
+        <div class="blog-content">
+          <h3>El Futuro del Desarrollo Web</h3>
+          <p>Frameworks modernos y tendencias que marcarán el rumbo del desarrollo frontend en 2025.</p>
+          <a href="#">Leer más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Ds-Technology | Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

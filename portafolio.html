@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Ds-Technology</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d47a1;
+      padding: 15px 60px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #64b5f6;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(13, 71, 161, 0.7)),
+                  url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+    }
+
+    /* ===== SECCIÓN DE PROYECTOS ===== */
+    .portfolio-section {
+      padding: 80px 60px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2.2em;
+      color: #0d47a1;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .portfolio-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .portfolio-card .info {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .portfolio-card h3 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-card p {
+      color: #555;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-card a {
+      background: #1565c0;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      transition: background 0.3s ease;
+    }
+
+    .portfolio-card a:hover {
+      background: #1e88e5;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: #1565c0;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+      font-size: 1.1em;
+    }
+
+    .cta a {
+      background: #64b5f6;
+      padding: 12px 25px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1e88e5;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .portfolio-section {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ds-<span>Technology</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html" style="color:#bbdefb;">Portafolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Nuestro Portafolio</h1>
+      <p>Conoce algunos de nuestros proyectos desarrollados con pasión e innovación.</p>
+    </div>
+  </section>
+
+  <section class="portfolio-section">
+    <h2>Proyectos Destacados</h2>
+    <div class="portfolio-container">
+
+      <div class="portfolio-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Proyecto 1">
+        <div class="info">
+          <h3>Plataforma de Gestión Empresarial</h3>
+          <p>Desarrollo full-stack con panel administrativo, base de datos y diseño responsivo.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Proyecto 2">
+        <div class="info">
+          <h3>Sitio Web Corporativo</h3>
+          <p>Diseño moderno, optimización SEO y experiencia de usuario impecable.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Proyecto 3">
+        <div class="info">
+          <h3>App Móvil de Reservas</h3>
+          <p>Aplicación híbrida para gestionar citas, pagos y notificaciones en tiempo real.</p>
+          <a href="#">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>¿Tienes una idea en mente?</h2>
+    <p>Transformemos tu visión en un producto digital impactante.</p>
+    <a href="contacto.html">Contáctanos</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ds-Technology. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ds-Technology</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d47a1;
+      padding: 15px 60px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #64b5f6;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.6), rgba(13, 71, 161, 0.6)),
+                  url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn.primary {
+      background: #1e88e5;
+      color: #fff;
+    }
+
+    .btn.primary:hover {
+      background: #1565c0;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn.secondary:hover {
+      background: #fff;
+      color: #1565c0;
+    }
+
+    /* ===== SECCIÓN DISEÑO ===== */
+    .design-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 60px;
+      flex-wrap: wrap;
+      gap: 50px;
+      background: #f9f9f9;
+    }
+
+    .design-section .text {
+      flex: 1 1 400px;
+      max-width: 450px;
+    }
+
+    .design-section .text h2 {
+      font-size: 2em;
+      color: #0d47a1;
+      margin-bottom: 15px;
+    }
+
+    .design-section .text p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .design-section ul {
+      list-style: none;
+    }
+
+    .design-section li {
+      margin-bottom: 10px;
+      color: #1565c0;
+      font-weight: 500;
+    }
+
+    .design-section .image {
+      flex: 1 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .design-section .image img {
+      width: 90%;
+      max-width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 2em;
+      }
+
+      .design-section {
+        padding: 40px 20px;
+      }
+
+      .design-section .text h2 {
+        font-size: 1.6em;
+      }
+
+      .design-section .image img {
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ds-<span>Technology</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Transformamos ideas en productos digitales</h1>
+      <p>Soluciones creativas en tecnología — diseño, desarrollo y estrategia.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn primary">Nuestros servicios</a>
+        <a href="#" class="btn secondary">Ver portafolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="design-section">
+    <div class="text">
+      <h2>Diseño con propósito</h2>
+      <p>Construimos experiencias que conectan con usuarios y generan valor real.</p>
+      <ul>
+        <li>✔ Investigación y prototipado</li>
+        <li>✔ Interfaces accesibles y limpias</li>
+        <li>✔ Optimización para conversión</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Diseño con propósito">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ds-Technology. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

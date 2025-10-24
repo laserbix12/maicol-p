@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Ds-Technology</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d47a1;
+      padding: 15px 60px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #64b5f6;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(13, 71, 161, 0.7)),
+                  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+    }
+
+    /* ===== SECCIÓN DE SERVICIOS ===== */
+    .services-section {
+      padding: 80px 60px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .services-section h2 {
+      font-size: 2.2em;
+      color: #0d47a1;
+      margin-bottom: 40px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+      font-size: 2.5em;
+      color: #1565c0;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: #1565c0;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+      font-size: 1.1em;
+    }
+
+    .cta a {
+      background: #64b5f6;
+      padding: 12px 25px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1e88e5;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .services-section {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ds-<span>Technology</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Nuestros Servicios</h1>
+      <p>Impulsamos tu presencia digital con soluciones tecnológicas innovadoras y efectivas.</p>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <h2>¿Qué ofrecemos?</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Desarrollo Web</h3>
+        <p>Creamos sitios modernos, funcionales y optimizados para tu negocio con las mejores tecnologías del mercado.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Aplicaciones Móviles</h3>
+        <p>Desarrollamos apps nativas e híbridas para Android y iOS que conectan tu marca con tus clientes.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Diseño UI/UX</h3>
+        <p>Diseños centrados en el usuario, con experiencias visuales atractivas y navegación intuitiva.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Soluciones en la Nube</h3>
+        <p>Implementamos infraestructura y almacenamiento cloud segura, escalable y eficiente.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <h3>Ciberseguridad</h3>
+        <p>Protegemos tus sistemas y datos con medidas avanzadas de seguridad digital y monitoreo constante.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Marketing Digital</h3>
+        <p>Optimizamos tu posicionamiento en línea con SEO, campañas publicitarias y redes sociales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>¿Listo para llevar tu empresa al siguiente nivel?</h2>
+    <p>Contacta con nuestro equipo y descubre cómo Ds-Technology puede transformar tu negocio.</p>
+    <a href="Contacto.html">Contáctanos</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Ds-Technology. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

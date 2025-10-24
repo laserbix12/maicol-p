@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Ds-Technology</title>
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d47a1;
+      padding: 15px 60px;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .logo span {
+      color: #64b5f6;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(13, 71, 161, 0.6), rgba(13, 71, 161, 0.6)),
+        url('https://images.unsplash.com/photo-1525186402429-b4ff38bedbec?auto=format&fit=crop&w=1600&q=80') center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 80px 60px;
+      background: #f9f9f9;
+      justify-content: center;
+    }
+
+    .contact-info {
+      flex: 1 1 350px;
+      max-width: 400px;
+    }
+
+    .contact-info h2 {
+      color: #0d47a1;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      color: #1565c0;
+      font-weight: 500;
+    }
+
+    .contact-info li {
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      flex: 1 1 400px;
+      max-width: 500px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      width: 100%;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #1565c0;
+    }
+
+    .contact-form button {
+      background: #1565c0;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0d47a1;
+    }
+
+    /* ===== MAPA ===== */
+    .map-section {
+      width: 100%;
+      height: 400px;
+      margin-top: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .contact-section {
+        padding: 50px 20px;
+      }
+
+      .contact-info h2 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Ds-<span>Technology</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contacto.html" style="color:#bbdefb; font-weight:600;">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte a hacerlo realidad.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Información de Contacto</h2>
+      <p>Ponte en contacto con nosotros por cualquiera de los siguientes medios. Nuestro equipo te responderá lo antes posible.</p>
+      <ul>
+        <li>📍 Dirección: Av. Tecnología 456, Lima, Perú</li>
+        <li>📞 Teléfono: +51 987 654 321</li>
+        <li>📧 Correo: contacto@dstechnology.com</li>
+        <li>🕒 Horario: Lunes a Viernes de 9:00 a 18:00</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h3>Envíanos un mensaje</h3>
+      <form action="#" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <div class="map-section">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.795607505123!2d-77.03652982520437!3d-12.136083488077843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b01956d4ff%3A0x401ff1f7f7026b8!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1681223319191!5m2!1ses-419!2spe" 
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Ds-Technology | Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
